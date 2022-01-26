@@ -5,14 +5,14 @@ Feature: overstock Test Functionalities
     Given a user is on the Home Page
     And click on No Thanks
 
-  @login_test
+  @Positive_test
   Scenario:  check login is successful with valid credentials
     When user Mouse hover to account option and click sign in option
     And user enter email"nbegum.realtor@gmail.com" and password"Lovely1234"
     And user click on sign in Button
     Then user is navigated to homepage page
 
-  @dataDriven_test
+  @dataDriven_YestMultiUser
   Scenario Outline: check login is successful with valid credentials for multiple users
     When user Mouse hover to account option and click sign in option
     And user enter email"<email>" and password"<password>"
@@ -25,7 +25,7 @@ Feature: overstock Test Functionalities
 
 
 
-  @dataDriven_test @positive_test
+  @dataDriven_test
   Scenario:  check user is successful login using Data table s
     When user Mouse hover to account option and click sign in option
     And  user click on login button upon entering credentials
@@ -43,7 +43,7 @@ Feature: overstock Test Functionalities
 
 
 
-  @SJewelryItem_test
+  @JewelryItem_test
   Scenario: user searching for purchase  movado women watches from jewelry  page
     When a user search for a Movado Womens Watch from searching bar
     And user clicked on item from searching result
@@ -51,8 +51,8 @@ Feature: overstock Test Functionalities
     Then  user successfully checkout the item from the cart
 
 
-  @SPopularItem_test
-  Scenario:  user checking for popular items to purchase a foot stool
+  @WallDecorItem_test
+  Scenario:  user checking for wall decor Items
     When a user searching for Wall Decor items
     And user select a Metal 36.5" Wall Decor, Multi item from the searching result
     And user add the item  to the cart from the product page
